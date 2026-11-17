@@ -1,0 +1,48 @@
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial;
+}
+
+.container {
+	display: flex;
+	gap: 50px;
+}
+
+.clock {
+	width: 250px;
+	height: 250px;
+	border: 2px solid black;
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 {
+	position: absolute;
+	top: 25px;
+	font-size: 16px;
+}
+
+.hour, .minute {
+	position: absolute;
+	bottom: 50%;
+	transform-origin: bottom;
+	border-radius: 10px;
+}
+
+.hour {
+	width: 6px;
+	height: 65px;
+	background-color: black;
+}
+
+.minute {
+	width: 4px;
+	height: 90px;
+	background-color: black;
+}
